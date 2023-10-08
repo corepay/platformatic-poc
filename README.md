@@ -1,4 +1,4 @@
-# Platformatic Runtime API with Standalone DB APIs One Database POC
+# Platformatic Runtime Single Databse POC
 
 ## Objective
 
