@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "platformatic start",
+    "test": "node --test test/*/*.test.js",
+    "migrate": "platformatic db migrations apply"
+  },
+  "devDependencies": {
+    "fastify": "^4.23.2"
+  },
+  "dependencies": {
+    "platformatic": "^1.2.0",
+    "@platformatic/db": "^1.2.0"
+  },
+  "engines": {
+    "node": "^18.8.0 || >=20.6.0"
+  }
+}

@@ -1,0 +1,365 @@
+[
+  {
+    "schema": null,
+    "table": "versions",
+    "constraints": [
+      {
+        "column_name": "version",
+        "constraint_type": "PRIMARY KEY"
+      }
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "name": "version",
+        "type": "INTEGER",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 1,
+        "hidden": 0,
+        "column_name": "version",
+        "udt_name": "integer",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 1,
+        "name": "name",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "name",
+        "udt_name": "text",
+        "is_nullable": "YES",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 2,
+        "name": "md5",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "md5",
+        "udt_name": "text",
+        "is_nullable": "YES",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 3,
+        "name": "run_at",
+        "type": "TIMESTAMP WITH TIME ZONE",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "run_at",
+        "udt_name": "timestamp with time zone",
+        "is_nullable": "YES",
+        "is_generated": "NO"
+      }
+    ]
+  },
+  {
+    "schema": null,
+    "table": "customers",
+    "constraints": [
+      {
+        "column_name": "id",
+        "constraint_type": "PRIMARY KEY"
+      }
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 1,
+        "hidden": 0,
+        "column_name": "id",
+        "udt_name": "integer",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 1,
+        "name": "title",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "title",
+        "udt_name": "text",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      }
+    ]
+  },
+  {
+    "schema": null,
+    "table": "products",
+    "constraints": [
+      {
+        "column_name": "id",
+        "constraint_type": "PRIMARY KEY"
+      }
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 1,
+        "hidden": 0,
+        "column_name": "id",
+        "udt_name": "integer",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 1,
+        "name": "title",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "title",
+        "udt_name": "text",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      }
+    ]
+  },
+  {
+    "schema": null,
+    "table": "invoices",
+    "constraints": [
+      {
+        "column_name": "id",
+        "constraint_type": "PRIMARY KEY"
+      }
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 1,
+        "hidden": 0,
+        "column_name": "id",
+        "udt_name": "integer",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 1,
+        "name": "title",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "title",
+        "udt_name": "text",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      }
+    ]
+  },
+  {
+    "schema": null,
+    "table": "addresses",
+    "constraints": [
+      {
+        "column_name": "id",
+        "constraint_type": "PRIMARY KEY"
+      }
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 1,
+        "hidden": 0,
+        "column_name": "id",
+        "udt_name": "integer",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 1,
+        "name": "title",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "title",
+        "udt_name": "text",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      }
+    ]
+  },
+  {
+    "schema": null,
+    "table": "emails",
+    "constraints": [
+      {
+        "column_name": "id",
+        "constraint_type": "PRIMARY KEY"
+      }
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 1,
+        "hidden": 0,
+        "column_name": "id",
+        "udt_name": "integer",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 1,
+        "name": "title",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "title",
+        "udt_name": "text",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      }
+    ]
+  },
+  {
+    "schema": null,
+    "table": "phones",
+    "constraints": [
+      {
+        "column_name": "id",
+        "constraint_type": "PRIMARY KEY"
+      }
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 1,
+        "hidden": 0,
+        "column_name": "id",
+        "udt_name": "integer",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 1,
+        "name": "title",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "title",
+        "udt_name": "text",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      }
+    ]
+  },
+  {
+    "schema": null,
+    "table": "line_items",
+    "constraints": [
+      {
+        "column_name": "id",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "line_items",
+        "column_name": "invoice_id",
+        "constraint_type": "FOREIGN KEY",
+        "foreign_table_name": "invoices",
+        "foreign_column_name": "id",
+        "loweredTableWithSchemaName": "lineItems",
+        "foreignEntityName": "invoice",
+        "entityName": "lineItem"
+      },
+      {
+        "table_name": "line_items",
+        "column_name": "product_id",
+        "constraint_type": "FOREIGN KEY",
+        "foreign_table_name": "products",
+        "foreign_column_name": "id",
+        "loweredTableWithSchemaName": "lineItems",
+        "foreignEntityName": "product",
+        "entityName": "lineItem"
+      }
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "name": "id",
+        "type": "INTEGER",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 1,
+        "hidden": 0,
+        "column_name": "id",
+        "udt_name": "integer",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 1,
+        "name": "product_id",
+        "type": "INT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "product_id",
+        "udt_name": "int",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      },
+      {
+        "cid": 2,
+        "name": "invoice_id",
+        "type": "INT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0,
+        "hidden": 0,
+        "column_name": "invoice_id",
+        "udt_name": "int",
+        "is_nullable": "NO",
+        "is_generated": "NO"
+      }
+    ]
+  }
+]
