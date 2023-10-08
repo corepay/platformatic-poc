@@ -25,10 +25,10 @@ At the end of the day this setup should meet my needs.  I'll have standalone app
 ## The POC
 
 This repository consists of a Platformatic Runtime environment with 4 DB apps:
-1 Customers (domain standalone app)
-2 Products (domain standalone app)
-3 Invoices (domain standalone app)
-4 Shared (tables/apis that are not intended to be a standalone app but provide supporting tables/APIs to associate with the standalone domain apps.)
+1. Customers (domain standalone app)
+2. Products (domain standalone app)
+3. Invoices (domain standalone app)
+4. Shared (tables/apis that are not intended to be a standalone app but provide supporting tables/APIs to associate with the standalone domain apps.)
 
 * Each app has a Plugin example endpoint
 * Each app only presents APIs that are necessary for the app.
