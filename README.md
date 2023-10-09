@@ -194,8 +194,7 @@ The following steps should apply to all DB apps in the 'services' folder.
 * IF your apps have relationships with other tables in other apps you need to make sure those tables are present in the schema.lock file also.  See the 'customers' app in this repo for an example where the 'addresses', 'emails' and 'phones' tables from the shared app are included in the customer schema.lock file.
 * If you update any of your apps tables in the Runtime migrations you need to close the app, delete the schema.lock and start the app apgain to create a new schema.lock with the schema and remove the tables you do not need in the app again.  Conversely you can go to the Runtime schema.lock, find the schema object(s) that were just migrated, close your app server and add them to your app schema.lock file and restart.
 
-> **PLATFORMATIC TEAM:**  A suggestion to help out here if this POC is a viable configuration is to allow us to add a 'tables' block or array in the platformatic.db.json file where we can put the tables we want to include in our DB app achema.  If present the `schema.lock` file can be generated from the tables in this file.  If not present then business as usual.
-
+> **PLATFORMATIC TEAM:**  A suggestion to help out here if this POC is a viable configuration is to allow us to add an `allow` or `only` object in the platformatic.db.json file where we can put the tables we want to include in our DB app achema.  You have the `ignore` object in the `db`, this is the opposite.
 THAT DOES IT!
 
 Let me know how this works for you if interested and if you run into any problems or have any enahncements or suggestions.
